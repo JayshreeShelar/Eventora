@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Eventora</title>
+  <meta name="description" content="Browse Eventora projects: weddings, corporate events and private celebrations.">
+  <meta name="theme-color" content="#3A1D3F">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="portfolio">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-3 focus:text-burgundy">Skip to main content</a>
+  <div id="header-placeholder"></div>
+
+  <main id="main">
+    <section class="hero hero--sub">
+      <img src="/Eventora/assets/images/Portfolio-Hero (3).jpg" alt="Couple walking through a tunnel of flowers and warm lights" class="hero__img" fetchpriority="high">
+      <div class="hero__overlay"></div>
+      <div class="container-x">
+        <div class="hero__content">
+          <p class="eyebrow hero-in" data-i="1">Portfolio</p>
+          <h1 class="h-display mt-5 hero-in" data-i="2">A Gallery of Moments</h1>
+          <p class="lead mt-6 hero-in" data-i="3">Browse projects across weddings, corporate events and private celebrations.</p>
+          <div class="mt-7 flex flex-wrap gap-4 hero-in" data-i="4">
+            <a href="contact.html" class="btn btn-gold">Discuss Your Event <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="section-pad bg-ivory">
+      <div class="container-x">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-reveal>
+          <div role="group" aria-label="Filter portfolio by category" class="flex flex-wrap gap-3"><button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All Events</button><button type="button" class="filter-btn" data-filter="weddings" aria-pressed="false">Weddings</button><button type="button" class="filter-btn" data-filter="corporate" aria-pressed="false">Corporate</button><button type="button" class="filter-btn" data-filter="celebrations" aria-pressed="false">Celebrations</button></div>
+          <p class="page-note">Click any image to enlarge it.</p>
+        </div>
+        <ul class="masonry mt-7" id="portfolio-grid">
+          <li class="masonry-item" data-category="weddings">
+            <button type="button" class="portfolio-btn aspect-[18/11]" data-full="assets/photos/wedding-aisle.jpg" data-title="Red Petal Wedding Aisle" data-label="Wedding" aria-label="View larger image: Red Petal Wedding Aisle">
+              <img src="assets/photos/wedding-aisle.jpg" alt="Wedding aisle with red petals, gold chairs and draped curtains" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Wedding</span><span class="font-display text-2xl mt-1">Red Petal Wedding Aisle</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="corporate">
+            <button type="button" class="portfolio-btn aspect-[14/11]" data-full="assets/photos/conference-hall.jpg" data-title="Annual Leadership Summit" data-label="Corporate" aria-label="View larger image: Annual Leadership Summit">
+              <img src="assets/photos/conference-hall.jpg" alt="Conference hall with a seated audience and large screens" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Corporate</span><span class="font-display text-2xl mt-1">Annual Leadership Summit</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="celebrations">
+            <button type="button" class="portfolio-btn aspect-[14/11]" data-full="assets/photos/birthday-balloon-arch.jpg" data-title="Birthday Balloon Arch" data-label="Celebration" aria-label="View larger image: Birthday Balloon Arch">
+              <img src="assets/photos/birthday-balloon-arch.jpg" alt="Peach balloon arch with a birthday cake and flowers" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Celebration</span><span class="font-display text-2xl mt-1">Birthday Balloon Arch</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="weddings">
+            <button type="button" class="portfolio-btn aspect-[4/5]" data-full="assets/photos/marigold-mandap.jpg" data-title="Marigold Ceremony Setup" data-label="Wedding" aria-label="View larger image: Marigold Ceremony Setup">
+              <img src="assets/photos/marigold-mandap.jpg" alt="Mandap covered in orange marigold garlands" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Wedding</span><span class="font-display text-2xl mt-1">Marigold Ceremony Setup</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="celebrations">
+            <button type="button" class="portfolio-btn aspect-square" data-full="assets/photos/baby-shower.jpg" data-title="Baby Shower Celebration" data-label="Celebration" aria-label="View larger image: Baby Shower Celebration">
+              <img src="assets/photos/baby-shower.jpg" alt="Baby shower backdrop with pastel balloons and fairy lights" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Celebration</span><span class="font-display text-2xl mt-1">Baby Shower Celebration</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="corporate">
+            <button type="button" class="portfolio-btn aspect-[16/10]" data-full="assets/photos/concert-stage.jpg" data-title="Awards &amp; Concert Stage" data-label="Corporate" aria-label="View larger image: Awards &amp; Concert Stage">
+              <img src="assets/photos/concert-stage.jpg" alt="Lit stage with blue beams and a large audience" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Corporate</span><span class="font-display text-2xl mt-1">Awards &amp; Concert Stage</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="weddings">
+            <button type="button" class="portfolio-btn aspect-[14/11]" data-full="assets/photos/garden-aisle.jpg" data-title="Hanging Floral Garden Aisle" data-label="Wedding" aria-label="View larger image: Hanging Floral Garden Aisle">
+              <img src="assets/photos/garden-aisle.jpg" alt="Garden wedding aisle with hanging flowers and white chairs" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Wedding</span><span class="font-display text-2xl mt-1">Hanging Floral Garden Aisle</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="corporate">
+            <button type="button" class="portfolio-btn aspect-square" data-full="assets/photos/gold-round-tables.jpg" data-title="Executive Dinner Evening" data-label="Corporate" aria-label="View larger image: Executive Dinner Evening">
+              <img src="assets/photos/gold-round-tables.jpg" alt="Round dinner tables with candles and warm golden light" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Corporate</span><span class="font-display text-2xl mt-1">Executive Dinner Evening</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="celebrations">
+            <button type="button" class="portfolio-btn aspect-[18/11]" data-full="assets/photos/candle-roses-dinner.jpg" data-title="Candlelit Anniversary" data-label="Celebration" aria-label="View larger image: Candlelit Anniversary">
+              <img src="assets/photos/candle-roses-dinner.jpg" alt="Romantic dinner table with red roses and a candle" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Celebration</span><span class="font-display text-2xl mt-1">Candlelit Anniversary</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="weddings">
+            <button type="button" class="portfolio-btn aspect-[14/11]" data-full="assets/photos/bride-mandap.jpg" data-title="Golden Mandap Wedding" data-label="Wedding" aria-label="View larger image: Golden Mandap Wedding">
+              <img src="assets/photos/bride-mandap.jpg" alt="Bride at a gold mandap decorated with red and ivory flowers" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Wedding</span><span class="font-display text-2xl mt-1">Golden Mandap Wedding</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="corporate">
+            <button type="button" class="portfolio-btn aspect-[14/11]" data-full="assets/photos/gala-gold-tables.jpg" data-title="Gold Gala Dinner" data-label="Corporate" aria-label="View larger image: Gold Gala Dinner">
+              <img src="assets/photos/gala-gold-tables.jpg" alt="Gala dinner hall with gold decor and sparkling lights" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Corporate</span><span class="font-display text-2xl mt-1">Gold Gala Dinner</span></span>
+            </button>
+          </li>
+          <li class="masonry-item" data-category="celebrations">
+            <button type="button" class="portfolio-btn aspect-[14/11]" data-full="assets/photos/sweets-spread.jpg" data-title="Festive Sweets Spread" data-label="Celebration" aria-label="View larger image: Festive Sweets Spread">
+              <img src="assets/photos/sweets-spread.jpg" alt="Spread of Indian sweets under pink fairy lights" loading="lazy" decoding="async">
+              <span class="portfolio-btn__overlay"><span class="caption-label">Celebration</span><span class="font-display text-2xl mt-1">Festive Sweets Spread</span></span>
+            </button>
+          </li>
+        </ul>
+        <p id="portfolio-empty" class="text-center text-charcoal/70 py-12" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+      <button type="button" id="lightbox-close" class="lightbox__btn lightbox__close" aria-label="Close image viewer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <button type="button" id="lightbox-prev" class="lightbox__btn lightbox__prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+      <figure class="lightbox__figure">
+        <img id="lightbox-img" class="lightbox__img" alt="">
+        <figcaption class="mt-5"><p id="lightbox-category" class="caption-label"></p><p id="lightbox-title" class="font-display text-2xl mt-1"></p><p id="lightbox-count" class="text-xs tracking-widest mt-2 opacity-70"></p></figcaption>
+      </figure>
+      <button type="button" id="lightbox-next" class="lightbox__btn lightbox__next" aria-label="Next image"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+    <section class="relative isolate overflow-hidden on-dark section-pad">
+      <img src="assets/photos/gold-round-tables.jpg" alt="" class="cta-photo" loading="lazy" decoding="async">
+      <div class="absolute inset-0 -z-10 cta-overlay cta-overlay--photo"></div>
+      <div class="container-x text-center max-w-3xl" data-reveal>
+        <span class="rule-gold mx-auto"></span>
+        <h2 class="h-section mt-8">Like What You See?</h2>
+        <p class="lead mx-auto mt-5">Tell us about your event and we will design something that is entirely yours.</p>
+        <div class="mt-7 flex flex-wrap justify-center gap-4"><a href="contact.html" class="btn btn-gold">Contact Eventora <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+</body>
+</html>

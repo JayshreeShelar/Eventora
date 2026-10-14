@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Eventora</title>
+  <meta name="description" content="Contact Eventora to start planning your wedding, corporate event or private celebration.">
+  <meta name="theme-color" content="#3A1D3F">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-3 focus:text-burgundy">Skip to main content</a>
+  <div id="header-placeholder"></div>
+
+  <main id="main">
+    <section class="hero hero--sub">
+      <img src="/Eventora/assets/images/Contact-Hero (2).jpg" alt="Romantic candlelit table with red roses and warm lights" class="hero__img" fetchpriority="high">
+      <div class="hero__overlay"></div>
+      <div class="container-x">
+        <div class="hero__content">
+          <p class="eyebrow hero-in" data-i="1">Contact</p>
+          <h1 class="h-display mt-5 hero-in" data-i="2">Let&rsquo;s Plan Something Beautiful</h1>
+          <p class="lead mt-6 hero-in" data-i="3">Tell us about your event. The more you share, the better we can prepare for our first conversation.</p>
+          <div class="mt-7 flex flex-wrap gap-4 hero-in" data-i="4">
+            <a href="#enquiry" class="btn btn-gold">Go to Enquiry Form <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="enquiry" class="section-pad bg-ivory">
+      <div class="container-x grid gap-8 lg:grid-cols-12">
+        <aside class="lg:col-span-6 lg:pr-6" data-reveal>
+          <p class="eyebrow">Studio Details</p>
+          <h2 class="h-section mt-4">Reach the Eventora team</h2>
+          <ul class="mt-5 space-y-4 text-sm leading-7">
+            <li class="flex gap-4"><span class="icon-ring shrink-0"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><span><strong class="block text-burgundy">Address</strong>Pimpri Chinchwad, Maharashtra, India</span></li>
+            <li class="flex gap-4"><span class="icon-ring shrink-0"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span><strong class="block text-burgundy">Phone</strong>+91 88305 32500</span></li>
+            <li class="flex gap-4"><span class="icon-ring shrink-0"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><span><strong class="block text-burgundy">Email</strong>shelarjayshree635@gmail.com</span></li>
+            <li class="flex gap-4"><span class="icon-ring shrink-0"><i class="fa-regular fa-clock" aria-hidden="true"></i></span><span><strong class="block text-burgundy">Studio hours</strong>Monday to Saturday, 10:00 to 18:00</span></li>
+          </ul>
+          <div class="flex gap-3 mt-6">
+            
+            <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Eventora on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Eventora on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="social-link" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Eventora on Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+            <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Eventora on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+        </aside>
+
+        <div class="lg:col-span-6 card-gold form-card" data-reveal data-delay="1">
+          <p class="eyebrow">Event Enquiry</p>
+          <h2 class="h-section mt-4">Tell us about your event</h2>
+          <div id="form-status" class="form-status mt-6" tabindex="-1"></div>
+          <form id="enquiry-form" class="mt-5" novalidate>
+            <div class="grid gap-x-6 sm:grid-cols-2">
+            <div class="field">
+              <label class="field-label" for="fullName">Full Name <span aria-hidden="true">*</span></label>
+              <input class="form-control" id="fullName" name="fullName" type="text" required aria-required="true" autocomplete="name" placeholder="Your full name" aria-describedby="fullName-error">
+              <p class="field-error" id="fullName-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input class="form-control" id="email" name="email" type="email" required aria-required="true" autocomplete="email" placeholder="you@example.com" aria-describedby="email-error">
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="phone">Phone Number <span aria-hidden="true">*</span></label>
+              <input class="form-control" id="phone" name="phone" type="tel" required aria-required="true" autocomplete="tel" placeholder="98765 43210" aria-describedby="phone-error">
+              <p class="field-error" id="phone-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="eventType">Event Type <span aria-hidden="true">*</span></label>
+              <select class="form-control" id="eventType" name="eventType" required aria-required="true" aria-describedby="eventType-error"><option value="">Select event type</option><option value="wedding">Wedding</option><option value="corporate">Corporate Event</option><option value="celebration">Celebration / Private Party</option><option value="other">Other</option></select>
+              <p class="field-error" id="eventType-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="eventDate">Preferred Event Date <span aria-hidden="true">*</span></label>
+              <input class="form-control" id="eventDate" name="eventDate" type="date" required aria-required="true" aria-describedby="eventDate-error">
+              <p class="field-error" id="eventDate-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="guests">Estimated Guest Count</label>
+              <input class="form-control" id="guests" name="guests" type="number" placeholder="For example, 120" min="1" inputmode="numeric" aria-describedby="guests-error">
+              <p class="field-error" id="guests-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="budget">Budget Range</label>
+              <select class="form-control" id="budget" name="budget" aria-describedby="budget-error"><option value="">Select a range</option><option value="under-2l">Under ₹2,00,000</option><option value="2-5l">₹2,00,000 to ₹5,00,000</option><option value="5-10l">₹5,00,000 to ₹10,00,000</option><option value="10-25l">₹10,00,000 to ₹25,00,000</option><option value="25l-plus">₹25,00,000 and above</option><option value="unsure">Not sure yet</option></select>
+              <p class="field-error" id="budget-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="location">Event Location <span aria-hidden="true">*</span></label>
+              <input class="form-control" id="location" name="location" type="text" required aria-required="true" placeholder="Pimpri Chinchwad, Pune..." aria-describedby="location-error">
+              <p class="field-error" id="location-error" aria-live="polite"></p>
+            </div>
+
+            </div>
+            <div class="field">
+              <label class="field-label" for="message">Additional Message</label>
+              <textarea class="form-control" id="message" name="message" rows="2" placeholder="Share your vision, theme or any special requirements" aria-describedby="message-error"></textarea>
+              <div class="flex justify-between"><p class="field-error" id="message-error" aria-live="polite"></p><p class="text-xs text-charcoal/60 mt-1" id="message-count">0 / 1000</p></div>
+            </div>
+            <p class="text-xs text-charcoal/65 mt-2">Fields marked * are required.</p>
+            <button type="submit" class="btn btn-primary btn-sm mt-4">Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="find-us" class="section-pad bg-white">
+      <div class="container-x">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Find Us</p>
+          <h2 class="h-section mt-4">Visit the Eventora Studio</h2>
+          <div class="orn" aria-hidden="true"><span></span><i class="fa-solid fa-spa"></i><span></span></div>
+        </div>
+        <div class="mt-6 grid gap-7 lg:grid-cols-2 lg:items-stretch">
+          <div class="visit-card" data-reveal>
+            <p class="eyebrow">Let&rsquo;s Meet</p>
+            <h3 class="h-card mt-3 text-burgundy" style="font-size:1.15rem">Come for a coffee and a conversation</h3>
+            <p class="mt-2 text-sm leading-6 text-charcoal/80">Bring your ideas, a rough guest list or just a feeling. We will walk through themes, venues and budgets together, with no pressure and no obligation.</p>
+            <ul class="visit-list mt-4">
+              <li><span class="icon-ring"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><span><strong>Studio</strong>Pimpri Chinchwad, Maharashtra, India</span></li>
+              <li><span class="icon-ring"><i class="fa-regular fa-clock" aria-hidden="true"></i></span><span><strong>Hours</strong>Monday to Saturday, 10:00 to 18:00</span></li>
+              <li><span class="icon-ring"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span><strong>Call</strong>+91 88305 32500</span></li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <a class="btn btn-primary btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Pimpri+Chinchwad,+Maharashtra" target="_blank" rel="noopener noreferrer">Get Directions <i class="fa-solid fa-location-arrow" aria-hidden="true"></i></a>
+              <a class="btn btn-outline btn-sm" href="tel:+918830532500">Call Now <i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="map-card map-card--tall" data-reveal data-delay="1">
+            <iframe title="Eventora location on Google Maps" src="https://www.google.com/maps?q=Pimpri+Chinchwad,+Maharashtra,+India&amp;z=13&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <a class="map-card__link" href="https://www.google.com/maps/search/?api=1&amp;query=Pimpri+Chinchwad,+Maharashtra" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-arrow" aria-hidden="true"></i> Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</body>
+</html>
