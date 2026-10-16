@@ -912,3 +912,15 @@ main .bg-burgundy .card-gold, main .on-dark .card-gold { color: var(--charcoal);
   .site-header .nav-link { font-size: .62rem; letter-spacing: .08em; }
   .site-header .header-cta { padding: .65rem .85rem; font-size: .65rem; }
 }
+
+/* ---- Mobile menu: glassmorphism (phones & tablets only) ---- */
+@media (max-width: 1099px) {
+  .site-header.is-menu-open {
+    background: rgba(255, 248, 244, .5);
+    -webkit-backdrop-filter: blur(18px) saturate(1.5);
+    backdrop-filter: blur(18px) saturate(1.5);
+    box-shadow: 0 18px 40px -20px rgba(58, 29, 63, .5);
+  }
+  .site-header.is-menu-open .mobile-menu.is-open { border-top-color: rgba(255, 255, 255, .6); }
+  .site-header.is-menu-open .mobile-link { border-bottom-color: rgba(255, 255, 255, .55); }
+}
